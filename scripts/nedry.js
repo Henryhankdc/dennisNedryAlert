@@ -2,39 +2,52 @@
 	
 
 
-$.fn.wrongAnswer = function(){
+$.fn.wrongAnswer = function(options){
+
+	var settings = $.extend({
+    
+
+  }, options);
+
+	// return this.css({ });
 
 	
-
-	$("#submit").on('click', function(e){
+	var element = $(this);
+	element.find('input[type=submit]').on('click', function(e){
 		e.preventDefault();
 		// Prevent the default function
 
 
-var nedryImageMarkup = '<img id="dNedry" style="display: none" src="images/nedryLarge.png" />'
-			
-	var input = $("#searchAudio").val();
-	// create variable to hold value entered into the input 
 
+			
+	var input = $("#please").val();
+	// create variable to hold value entered into the input 
+	// Target this field's Id.
 	console.log("Input is equal to:" + input);
 
       	if 	(input == ''){
 
       		// This "set's it off." if there is nothing
-      		// entered into the input field the audio file will play
+      		// entered into the input field of the form the audio file will play
 
       		// console.log("Input.text is equal to:" + input);
       			
-      		var audio = $('#nedry')[0];
-			audio.play()
-			// This will play the audio and is connected to the
-			// ID of the audio file in your HTML
-  
-    
-    $('.theGuy').fadeIn('slow').delay(2000).fadeOut(1500);
+			
+		
+	
 
-// Image fade in/out.
-// Animation complete
+			element.append('<audio src="nedry.mp3" id="nedry"></audio><img src="images/newman.gif" class="theGuy" id="dnedry"/>');
+  			
+  			// append the mp3 file and moving gif into the html via java script.
+  			// Use ID of "nedry" for the mp3 file and ID of theGuy for the gif file.
+  			
+
+    		$('#nedry')[0].play()
+    			// This makes the audio file play
+
+   			$('.theGuy').fadeIn('slow').delay(2000).fadeOut(1500);
+   				// This makes the gif fade in and out.
+
 
 // console.log('no info');
 
@@ -45,8 +58,7 @@ var nedryImageMarkup = '<img id="dNedry" style="display: none" src="images/nedry
 
      
 		
-	})   // End of this.on('submit')
-     
+	})   // End of element.find on.click function    
 
 };    // end of fn.WrongAnswer
 
