@@ -10,3 +10,7 @@ form{
 	text-align: center;
 	padding-top: 300px;
 }
+
+.theGuy{
+	display: none;
+}
