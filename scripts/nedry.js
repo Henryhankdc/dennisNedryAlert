@@ -29,18 +29,12 @@ var nedryImageMarkup = '<img id="dNedry" style="display: none" src="images/nedry
 			audio.play()
 			// This will play the audio and is connected to the
 			// ID of the audio file in your HTML
-      	
-      	// ********************************************************
-      	// Image
-      	
-    // Animation complete
-    $('.theGuy').fadeIn('slow', function(){
-    	('.theGuy').delay(5000).fadeOut('slow');
-    });
+  
+    
+    $('.theGuy').fadeIn('slow').delay(2000).fadeOut(1500);
 
-
-
-
+// Image fade in/out.
+// Animation complete
 
 // console.log('no info');
 

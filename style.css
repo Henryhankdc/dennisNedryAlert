@@ -5,12 +5,40 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+body{
+	background-image: url(images/jurassicConsole3.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 100vh;
+	color: white;
+}
+
 form{
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	text-align: center;
+	padding-right: 500px;
+
 	padding-top: 300px;
+	position: relative;
 }
 
 .theGuy{
 	display: none;
+	z-index: 20;
+	
+	position: fixed;
+	bottom: 0;
+	
+
+	/*position: absolute;
+	left: 200px;
+	top: 200px;*/
+
+	/*Large****************/
+
+	/*display: none;
+	position: absolute;
+	left:0;
+	top:-75px;*/
+
 }
