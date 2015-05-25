@@ -5,35 +5,120 @@
 	<title>Dennis Nedry Alert</title>
 
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 	<script src ="scripts/nedry.js"></script>
 	<script src = "scripts/main.js"></script>
+	<script src="scripts/smooth-scroll.min.js"></script>
+	
 
 </head>
 <body>
-<!-- <audio src="nedry.mp3" id="nedry">
-	
-	
-</audio> -->
+
+<header class = "intro">
+<div class="headerWrapper">
+	<h1>Dennis Nedry Alert </h1>
+	<p>A Jurrasic Park inspired alert function</p>
+
+</div>	<!-- end div.headerWrapper -->
+</header><!-- End header section -->
+
+<section class="main">
+	<div class="mainWrapper clearfix">
+		
+		<div class="mainTitle">
+			<h2>Usage</h2>
+
+		</div><!-- End div.mainTitle -->
+		<div class="sectionDescription">
+			
+			<p>"Hold onto your butts...." the Denis Nedry Alert provides an engaging experience for your visitors that acts as both an unmistakable alert function and a classic inside joke for all Jurrasic Park fans.</p>
+		</div><!-- End of sectionDescription -->
+		<div class="sectionDescription description2">
+			<p> If the user forgets to fill in a required field and clicks the submit input a sound clip of Denis Nedry will play and a moving gif of the legend himself will appear from the bottom of the screen. Denis Nedry will continue to troll your user until the required input text field has been filled in.</p>
+
+		</div><!-- end of descirption2 -->
+
+		<div class="sectiondescription description3">
+			
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RfiQYRn7fBg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+		</div> <!-- end div.description -->
+
+		<div class="mainTitle">
+			<h2>Getting Started</h2>
+
+		</div><!-- End div.mainTitle -->
+
+		<div class="sectionDescription">
+
+			<p>Simply include <span class = "include"> nedry.js</span> in your scripts folder and the <span class = "include">nedryAssets</span> folder in your main project folder.</p>
+
+		</div>
+
+		<div class="sectionDescription">
+			<p>Call the main function in your main.js:</p>
+				<pre>
+				$(function(){
+				$('form').wrongAnswer();
+
+				}); 
+				</pre>
+
+				<p>Now add a ID of "ahAhah" to the required text input type of your choice in your HTML.</p>
+
+				<pre>
+
+input type="text" id="ahAhah" class="password" placeholder="Enter Password" required 
+
+				</pre>
+			</div> <!-- end section description -->
+
+			<div class="mainTitle">
+				<h2>How it Works</h2>
+
+			</div>
+			<div class="sectionDescription">
+				<p>The plugin can be added to any text input type within a form that has a required attribute. Instead of a alert box appearing telling the user the field is required Denis Nedry will appear and a sound will play once the submit button has been clicked.</p>
+
+			</div><!-- end section description -->
+
+			<div class="sectionDescription description4">
+				
+				<h2> <a href="https://github.com/Henryhankdc/dennisNedryAlert">	View on GitHub</h2></a>
+
+				<h3>Try It out below!</h3>
+				<a data-scroll href="#tryIt"> <i class="fa fa-angle-double-down"></i></a>
+			</div><!-- end section description -->
 
 
-<form id= "ahAhah">
-	<div class="formWrapper">
+
+	</div><!-- end of main wrapper -->
+
+</section><!-- End of main section -->
+
+
+
+
+
+
+
+<form class="mainForm">
+	<div class="formWrapper" id="tryIt">
 	
 			<div class="searchWrapper">
-				<label class="searchLabel"> Password:</label>
+				<!-- <label class="searchLabel"> Password:</label> -->
 			</div><!-- end searchWrapper div -->
 
 			
 
-	<input type="text"  name="search" id="please" class="searchBar" placeholder="Enter Password" required>
-
-	<!-- <img src="images/nedryMoving.gif" id="dNedry" class = "theGuy" alt="Denis Nedry from Jurrasic Park"> -->
-
+	<input type="text" id="ahAhah" class="password" placeholder="Enter Password" required>
 
 
 	<div class="submitButton">
-	<input type="submit" id="submit" class="search" value="Enter">
+	<input type="submit" id="submit" class="submit" value="Enter">
 
 	
 	</div><!-- end .submitButtondiv -->
@@ -45,7 +130,14 @@
 </form>
 
 
-	
+	<footer>
+	<div class="footerWrapper">
+		Made for fun by <a href="http://www.henrymesias.com">Henry Mesias </a> | Copyright 2015 | 
+	<a href="https://github.com/Henryhankdc/dennisNedryAlert">	<i class="fa fa-github"></i> </a>
+
+</div><!-- End footer wrapper -->
+
+	</footer>
 
 </body>
 </html>

@@ -20,7 +20,7 @@ $.fn.wrongAnswer = function(options){
 
 
 			
-	var input = $("#please").val();
+	var input = $("#ahAhah").val();
 	// create variable to hold value entered into the input 
 	// Target this field's Id.
 	console.log("Input is equal to:" + input);
@@ -36,7 +36,7 @@ $.fn.wrongAnswer = function(options){
 		
 	
 
-			element.append('<audio src="nedry.mp3" id="nedry"></audio><img src="images/newman.gif" class="theGuy" id="dnedry"/>');
+			element.append('<audio src="assets/nedry.mp3" id="nedry"></audio><img src="assets/newman.gif" class="theGuy" id="dnedry"/>');
   			
   			// append the mp3 file and moving gif into the html via java script.
   			// Use ID of "nedry" for the mp3 file and ID of theGuy for the gif file.
